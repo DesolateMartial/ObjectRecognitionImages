@@ -1,99 +1,96 @@
-# CIFAR-10 Object Recognition using CNN
+# 🎯 CIFAR-10 Object Recognition using CNN
 
-This project implements a **Convolutional Neural Network (CNN)** to classify images from the **CIFAR-10 dataset**, which includes 10 classes of 32x32 color images:
+This project implements a **Convolutional Neural Network (CNN)** to classify images from the **CIFAR-10 dataset**, which consists of 10 categories of 32x32 color images:
 
-* Airplane ✈️
-* Automobile 🚗
-* Bird 🐦
-* Cat 🐱
-* Deer 🦌
-* Dog 🐶
-* Frog 🐸
-* Horse 🐴
-* Ship 🚢
-* Truck 🚚
+* ✈️ Airplane
+* 🚗 Automobile
+* 🐦 Bird
+* 🐱 Cat
+* 🦌 Deer
+* 🐶 Dog
+* 🐸 Frog
+* 🐴 Horse
+* 🚢 Ship
+* 🚚 Truck
 
-The goal is to automatically detect and recognize objects using image classification techniques.
+The objective is to automatically detect and classify objects using deep learning techniques.
 
 ---
 
-## 📁 Folder Structure
+## 📁 Project Structure
 
 ```
 ObjectRecognitionImages/
 │
 ├── cifar10_cnn.py         # Main Python script
-├── setup_and_run.bat      # For Windows setup and execution
-├── setup_and_run.sh       # For macOS/Linux setup (optional)
-└── README.md              # Project documentation
+├── setup_and_run.bat      # Windows setup and execution script
+├── setup_and_run.sh       # macOS/Linux setup script
+└── README.md              # Documentation
 ```
 
 ---
 
 ## ⚙️ Setup Instructions
 
-### ✅ Prerequisites
+### ✅ Requirements
 
-Install the required Python libraries:
+Make sure Python and pip are installed. Then install the required libraries using:
 
 ```bash
 pip install tensorflow numpy matplotlib seaborn scikit-learn
 ```
 
-Or run the provided setup script:
+Alternatively, you can use the provided setup scripts:
 
-* **Windows**: `setup_and_run.bat`("wait for sometime....takes lot of time")
-* **Mac/Linux**: `setup_and_run.sh`
+* **Windows**: `setup_and_run.bat` *(may take some time to complete)*
+* **macOS/Linux**: `setup_and_run.sh`
 
 ---
 
-## 🚀 How to Run the Project
+## 🚀 How to Run
 
-### 🖥️ Windows:
+### 💻 On Windows:
 
-1. Clone or download this repository.
-2. Double-click `setup_and_run.bat`.(it takes time)
+1. Download or clone the repository.
+2. Run `setup_and_run.bat` (or run `cifar10_cnn.py` manually after installing dependencies).
 
-or 
-1.Run .py file after installing all libraries.
+### 💻 On macOS/Linux:
 
-### 💻 macOS/Linux:
-
-1. Open a terminal in the project folder.
-2. Run:
+1. Open a terminal in the project directory.
+2. Run the following:
 
    ```bash
    chmod +x setup_and_run.sh
    ./setup_and_run.sh
    ```
 
-> The script will create a virtual environment, install required packages, and execute the model.
+> The script will set up a virtual environment, install the dependencies, and start training the model.
 
 ---
 
-## 📊 After Training
+## 📊 Output After Training
 
-After training is complete, the script will:
+Once the model finishes training, it will:
 
 * Display **Test Accuracy**
-* Print **Precision, Recall, F1-Score**
-* Show a **Confusion Matrix** (as a heatmap)
+* Show **Precision, Recall, and F1-Score**
+* Plot a **Confusion Matrix** using Seaborn heatmap
 
 ---
 
-## 🧠 Model Architecture
+## 🧠 Model Summary
 
-* 3 Convolutional Layers
-* Max Pooling Layers
-* Flatten + Dropout + Dense Layer
-* Output Layer with 10 classes (Softmax)
+The CNN architecture used includes:
+
+* 3 × Convolutional + ReLU layers
+* 2 × Max Pooling layers
+* 1 × Flatten + Dropout + Dense layer
+* 1 × Output layer with Softmax (10 classes)
 
 ---
 
 ## 📚 References
 
 * [CIFAR-10 Dataset](https://www.cs.toronto.edu/~kriz/cifar.html)
-* TensorFlow Documentation
-* [Kaggle: CIFAR-10 with CNN for Beginners](https://www.kaggle.com/code/roblexnana/cifar10-with-cnn-for-beginer)
-
----
+* [TensorFlow Documentation](https://www.tensorflow.org/)
+* [Kaggle: CIFAR-10 CNN for Beginners](https://www.kaggle.com/code/roblexnana/cifar10-with-cnn-for-beginer)
