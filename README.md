@@ -42,7 +42,7 @@ pip install tensorflow numpy matplotlib seaborn scikit-learn
 
 Or run the provided setup script:
 
-* **Windows**: `setup_and_run.bat`
+* **Windows**: `setup_and_run.bat`("wait for sometime....takes lot of time")
 * **Mac/Linux**: `setup_and_run.sh`
 
 ---
@@ -52,7 +52,10 @@ Or run the provided setup script:
 ### 🖥️ Windows:
 
 1. Clone or download this repository.
-2. Double-click `setup_and_run.bat`.
+2. Double-click `setup_and_run.bat`.(it takes time)
+
+or 
+1.Run .py file after installing all libraries.
 
 ### 💻 macOS/Linux:
 
