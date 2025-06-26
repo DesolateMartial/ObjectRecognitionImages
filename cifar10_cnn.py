@@ -1,7 +1,6 @@
 
-# Import Libraries
 import matplotlib
-matplotlib.use("TkAgg")  # Force GUI backend
+matplotlib.use("TkAgg")  
 
 import numpy as np
 import matplotlib.pyplot as plt
