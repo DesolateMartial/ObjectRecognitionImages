@@ -20,7 +20,7 @@ The goal is to automatically detect and recognize objects using image classifica
 ## 📁 Folder Structure
 
 ```
-Project/
+ObjectRecognitionImages/
 │
 ├── cifar10_cnn.py         # Main Python script
 ├── setup_and_run.bat      # For Windows setup and execution
